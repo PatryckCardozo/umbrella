@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { UseState } from 'react'
 import styles from './style.module.scss';
 import { motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+import { UsePathname } from 'next/navigation';
 import { menuSlide } from '../animation';
 import Link from './Link';
 import Curve from './Curve';
@@ -28,8 +28,8 @@ const navItems = [
 
 export default function index() {
 
-  const pathname = usePathname();
-  const [selectedIndicator, setSelectedIndicator] = useState(pathname);
+  const pathname = UsePathname();
+  const [selectedIndicator, setSelectedIndicator] = UseState(pathname);
 
   return (
     <motion.div 

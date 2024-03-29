@@ -1,5 +1,5 @@
-import { useRef } from 'react';
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { UseRef } from 'react';
+import { UseScroll, UseTransform, motion } from 'framer-motion';
 import styles from './style.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -39,15 +39,15 @@ const slider2 = [
 
 export default function index() {
 
-    const container = useRef(null);
-    const { scrollYProgress } = useScroll({
+    const container = UseRef(null);
+    const { scrollYProgress } = UseScroll({
         target: container,
         offset: ["start end", "end start"]
     })
 
-    const x1 = useTransform(scrollYProgress, [0, 1], [-100, 100])
-    const x2 = useTransform(scrollYProgress, [0, 1], [100, -100])
-    const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
+    const x1 = UseTransform(scrollYProgress, [0, 1], [-100, 100])
+    const x2 = UseTransform(scrollYProgress, [0, 1], [100, -100])
+    const height = UseTransform(scrollYProgress, [0, 0.9], [50, 0])
 
     return (
 

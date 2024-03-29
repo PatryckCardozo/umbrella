@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
-import { useInView, motion } from 'framer-motion';
-import { useRef } from 'react';
+import { UseInView, motion } from 'framer-motion';
+import { UseRef } from 'react';
 import Image from 'next/image';
 import { slideUp, opacity } from './animation';
 import Rounded from '../../common/RoundedButton';
@@ -8,8 +8,8 @@ export default function index() {
 
     const title = "O equilíbrio ideal entre a portabilidade e a praticidade para o seu dia a dia."
     const phrase = "Comprimento: 30 Centimetros."
-    const description = useRef(null);
-    const isInView = useInView(description)
+    const description = UseRef(null);
+    const isInView = UseInView(description)
     return (
 
         <div ref={description} className={styles.description}>

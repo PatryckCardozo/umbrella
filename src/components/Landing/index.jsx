@@ -8,6 +8,8 @@ import { ScrollTrigger } from 'gsap/all';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
 import { RefreshTitle } from '../../common/Refresh'
+import Spline from './SplineLanding'
+
 
 export default function Home() {
 
@@ -54,8 +56,8 @@ export default function Home() {
         </div>
       </RefreshTitle>
       <div className={styles.iconLanding}>
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.85/build/spline-viewer.js"></script>
-        <spline-viewer url="https://prod.spline.design/WtUD0mMbf2s0KuBd/scene.splinecode"></spline-viewer>
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.85/build/spline-viewer.js" async></script>
+      <spline-viewer url="https://prod.spline.design/WtUD0mMbf2s0KuBd/scene.splinecode"></spline-viewer>
       </div>
     </div>
   )
