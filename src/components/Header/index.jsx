@@ -1,4 +1,4 @@
-'use client';
+'Use client';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Roboto } from 'next/font/google'
 import Image from 'next/image';
@@ -16,18 +16,18 @@ import Magnetic from '../../common/Magnetic';
 
 
 export default function index() {
-    const header = useRef(null);
-    const [isActive, setIsActive] = useState(false);
-    const pathname = usePathname();
-    const button = useRef(null);
+    const header = UseRef(null);
+    const [isActive, setIsActive] = UseState(false);
+    const pathname = UsePathname();
+    const button = UseRef(null);
 
 
 
-    useEffect(() => {
+    UseEffect(() => {
         if (isActive) setIsActive(false)
     }, [pathname])
 
-    useLayoutEffect(() => {
+    UseLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
         gsap.to(button.current, {
             scrollTrigger: {

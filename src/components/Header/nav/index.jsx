@@ -28,8 +28,8 @@ const navItems = [
 
 export default function index() {
 
-  const pathname = usePathname();
-  const [selectedIndicator, setSelectedIndicator] = useState(pathname);
+  const pathname = UsePathname();
+  const [selectedIndicator, setSelectedIndicator] = UseState(pathname);
 
   return (
     <motion.div 
@@ -40,7 +40,7 @@ export default function index() {
       className={styles.menu}
       >
        <div className={styles.body}>
-            <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
+            <div onMoUseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
                     <div className={styles.header}>
                         <p>Menu</p>
                     </div>
