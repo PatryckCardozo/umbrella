@@ -1,15 +1,15 @@
 import React from 'react'
-import { UseEffect, UseRef } from 'react';
+import { useEffect, useRef } from 'react';
 import styles from './style.module.scss';
 import gsap from 'gsap';
 import Magnetic from '../Magnetic';
 
 export default function index({children, backgroundColor="#459ce9", ...attributes}) {
 
-  const circle = UseRef(null);
-  let timeline = UseRef(null);
+  const circle = useRef(null);
+  let timeline = useRef(null);
   let timeoutId = null;
-  UseEffect( () => {
+  useEffect( () => {
     timeline.current = gsap.timeline({paused: true})
     timeline.current
       .to(circle.current, {top: "-25%", width: "150%", duration: 0.4, ease: "power3.in"}, "enter")
