@@ -6,7 +6,6 @@ import Link from 'next/link';
 import styles from './style.module.scss';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
-import Nav from './nav';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Rounded from '../../common/RoundedButton';
@@ -16,18 +15,18 @@ import Magnetic from '../../common/Magnetic';
 
 
 export default function index() {
-    const header = UseRef(null);
-    const [isActive, setIsActive] = UseState(false);
-    const pathname = UsePathname();
-    const button = UseRef(null);
+    const header = useRef(null);
+    const [isActive, setIsActive] = useState(false);
+    const pathname = usePathname();
+    const button = useRef(null);
 
 
 
-    UseEffect(() => {
+    useEffect(() => {
         if (isActive) setIsActive(false)
     }, [pathname])
 
-    UseLayoutEffect(() => {
+    useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
         gsap.to(button.current, {
             scrollTrigger: {

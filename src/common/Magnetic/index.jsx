@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 
 export default function index({children}) {
-    const magnetic = UseRef(null);
+    const magnetic = useRef(null);
 
-    UseEffect( () => {
+    useEffect( () => {
         console.log(children)
         const xTo = gsap.quickTo(magnetic.current, "x", {duration: 1, ease: "elastic.out(1, 0.3)"})
         const yTo = gsap.quickTo(magnetic.current, "y", {duration: 1, ease: "elastic.out(1, 0.3)"})

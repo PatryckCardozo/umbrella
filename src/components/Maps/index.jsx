@@ -7,8 +7,8 @@ export default function index() {
 
     const title = "O equilíbrio ideal entre a portabilidade e a praticidade para o seu dia a dia."
     const phrase = "Comprimento: 30 Centimetros."
-    const description = UseRef(null);
-    const isInView = UseInView(description)
+    const description = useRef(null);
+    const isInView = useInView(description)
     return (
 
         <div className={styles.sectionContainer}>

@@ -1,4 +1,4 @@
-'Use client'
+'use client'
 import Image from 'next/image'
 import styles from './style.module.scss'
 import { Roboto } from 'next/font/google'
@@ -13,13 +13,13 @@ import { RefreshTitle } from '../../common/Refresh'
 
 export default function Home() {
 
-  const firstText = UseRef(null);
-  const secondText = UseRef(null);
-  const slider = UseRef(null);
+  const firstText = useRef(null);
+  const secondText = useRef(null);
+  const slider = useRef(null);
   let xPercent = 0;
   let direction = -1;
 
-  UseLayoutEffect(() => {
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(slider.current, {
       scrollTrigger: {
