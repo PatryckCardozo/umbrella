@@ -1,4 +1,4 @@
-'Use client';
+'use client';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Roboto } from 'next/font/google'
 import Image from 'next/image';
