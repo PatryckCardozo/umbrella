@@ -48,10 +48,7 @@ export default function Index() {
                         </Rounded>
                 </div>
                 <div className={styles.info}>
-
                     <div>
-                        <span>
-                        </span>
                         <Magnetic>
                             <a href='https://www.instagram.com/patryck.cardozo/'>@Code by Patryck Cardozo</a>
                         </Magnetic>
