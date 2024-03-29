@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/all';
 import { slideUp } from './animation';
 import { motion } from 'framer-motion';
 import { RefreshTitle } from '../../common/Refresh'
-import Spline from './SplineLanding'
+
 
 
 export default function Home() {
