@@ -4,7 +4,8 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import { slideUp, opacity } from './animation';
 import Rounded from '../../common/RoundedButton';
-export default function index() {
+
+export default function Index() {
 
   const title = "A medida perfeita para atender às suas necessidades e as da sua família também."
   const phrase = "Tamanho redondo: 1,30m de diâmetro."

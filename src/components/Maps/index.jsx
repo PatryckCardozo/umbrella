@@ -3,7 +3,8 @@ import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
 import Rounded from '../../common/RoundedButton';
-export default function index() {
+
+export default function Index() {
 
     const title = "O equilíbrio ideal entre a portabilidade e a praticidade para o seu dia a dia."
     const phrase = "Comprimento: 30 Centimetros."
