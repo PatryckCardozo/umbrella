@@ -1,0 +1,77 @@
+.landing {
+  position: relative;
+  display: flex; /* Adicionado */
+  flex-direction: row;
+  width: 90vw;
+  height: 90vh;
+  overflow: hidden;
+  margin: auto;
+  padding-top: 70px;
+  font-family: 'Roboto';
+  align-items: center;
+
+}
+
+.iconLanding {
+  width: 50vw;
+  height: 80vh;
+  padding-top: 70px;
+
+
+}
+
+.descLading h1 {
+  width: 650px;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 1000;
+}
+
+.descLading h2 {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  width: 450px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .landing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+  }
+
+  .iconLanding{
+    order: -1;
+    padding: 50px 30px 0px 0;
+    height: 40vh;
+    width: 90vw;
+  }
+
+
+  .descLading{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .descLading h1 {
+    width: 90vw;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    padding: 0;
+  }
+  
+  .descLading h2 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 90vw;
+    font-weight: 500;
+    padding: 0px;
+  }
+
+}
