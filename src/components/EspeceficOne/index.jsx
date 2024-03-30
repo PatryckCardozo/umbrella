@@ -19,7 +19,7 @@ export default function Index() {
                     alt={"image"}
                     width={180}
                     height={500}
-                    src={`/images/umbrella_closed-removebg-preview2.png`} />
+                    src={`/images/umbrella-close.png`} />
             </div>
 
             <div className={styles.title}>

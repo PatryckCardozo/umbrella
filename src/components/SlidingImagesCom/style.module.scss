@@ -62,14 +62,24 @@
     .slidingImages{
         padding-top: 100px;
         width: 100vw;
-        text-align: center;       
+        text-align: center;  
+        
+        .title{
+            padding-bottom: 50px;
+        }
         
     }
 
-    .slidingImages .slider{
+    .slidingImages 
+    .slider {
         height: 20vh;
         width: 100vw;
 
+        .project 
+        .imageContainer {
+            width: 100%;
+            height: 100%;
+        }
     }
 
 

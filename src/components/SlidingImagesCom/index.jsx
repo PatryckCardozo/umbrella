@@ -10,7 +10,7 @@ const slider1 = [
         href: "https://www.facebook.com/profile.php?id=61557670686581"
     },
     {
-        src: "olx-104.svg"
+        src: "shein-logo.svg"
     }
 ]
 
@@ -19,7 +19,7 @@ const slider2 = [
         src: "shopee-logo.svg"
     },
     {
-        src: "shein-logo.svg"
+        src: "olx-104.svg"
     }
 ]
 
