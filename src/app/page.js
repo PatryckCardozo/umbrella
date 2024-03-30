@@ -7,8 +7,10 @@ import Landing from '../components/Landing';
 import Projects from '../components/Projects';
 import Description from '../components/EspeceficOne';
 import SlidingImages from '../components/SlidingImages';
+import SlidingImagesCom from '../components/SlidingImagesCom';
 import Contact from '../components/Contact';
 import Maps from '../components/Maps'
+import Price from '../components/Price'
 
 export default function Home() {
 
@@ -37,7 +39,9 @@ export default function Home() {
       <Landing />
       <Description />
       <Projects />
+      <Price />
       <Maps />
+      <SlidingImagesCom />
       <SlidingImages />
       <Contact />
     </main>

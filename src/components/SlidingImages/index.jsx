@@ -12,28 +12,16 @@ const slider1 = [
     {
         src: "facebook-3-logo-svgrepo-com.svg",
         href: "https://www.facebook.com/profile.php?id=61557670686581"
-    },
+    }
+]
+
+const slider2 = [
     {
         src: "twitter-3-logo-svgrepo-com.svg"
     },
     {
         src: "instagram-1-svgrepo-com.svg"
     }
-]
-
-const slider2 = [
-    {
-        src: "mercado-livre-87.svg"
-    },
-    {
-        src: "olx-104.svg"
-    },
-    {
-        src: "shopee-logo.svg"
-    },
-    {
-        src: "shein-logo.svg"
-    },
 
 ]
 
@@ -45,8 +33,8 @@ export default function Index() {
         offset: ["start end", "end start"]
     })
 
-    const x1 = useTransform(scrollYProgress, [0, 1], [-100, 100])
-    const x2 = useTransform(scrollYProgress, [0, 1], [100, -100])
+    const x1 = useTransform(scrollYProgress, [0, 1], [-50, 50])
+    const x2 = useTransform(scrollYProgress, [0, 1], [50, -50])
     const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
 
     return (
