@@ -163,16 +163,36 @@
 
     .contact {
         padding-top: 200px;
-    }
-    
 
-    .nav {
-        padding-top: 50px;
-        flex-direction: column;
-    }
+        .body {
+            .title {
+                .imageContainer {
+                    img {
+                        width: 80%;
+                        height: 80%;
+                    }
+                }
 
-    .info{
-        margin-top: 0px;
-    }
+                h2{
+                    font-size: 25px;
+                }
 
+        
+
+                .buttonContainer {
+                    left: calc(100% - 300px);
+                }
+            }
+        }
+
+        .nav {
+            padding-top: 50px;
+            flex-direction: column;
+        }
+
+        .info {
+            margin-top: 0px;
+        }
+
+    }
 }
