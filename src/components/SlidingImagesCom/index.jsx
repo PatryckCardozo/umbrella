@@ -7,7 +7,7 @@ import Link from 'next/link';
 const slider1 = [
     {
         src: "mercado-livre-87.svg",
-        href: "https://www.facebook.com/profile.php?id=61557670686581"
+        href: "https://produto.mercadolivre.com.br/MLB-4568523382-guarda-chuva-_JM"
     },
     {
         src: "shein-logo.svg"
@@ -16,10 +16,12 @@ const slider1 = [
 
 const slider2 = [
     {
-        src: "shopee-logo.svg"
+        src: "shopee-logo.svg",
+        href: "https://shopee.com.br/product/1220370739/23297434556/"
     },
     {
-        src: "olx-104.svg"
+        src: "olx-104.svg",
+        href: "https://rj.olx.com.br/rio-de-janeiro-e-regiao/comercio-e-escritorio/outros-itens-para-comercio-e-escritorio/guarda-chuva-1292308443?"
     }
 ]
 
