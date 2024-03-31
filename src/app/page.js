@@ -13,7 +13,7 @@ import Maps from '../components/Maps'
 import Price from '../components/Price'
 
 export default function Home() {
-
+  
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect( () => {
