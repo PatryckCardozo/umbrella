@@ -47,31 +47,32 @@ export default function Index() {
                     slider1.map((project, index) => {
                         return <div key={index} className={styles.project} style={{ backgroundColor: project.color }} >
                             <div className={styles.imageContainer}>
-                            <Link href={`${project.href}`}>
-                                <Image
-                                    fill={true}
-                                    alt={"image"}
-                                    src={`/images/${project.src}`} /></Link>
-                                    
+                                <Link href={`${project.href}`}>
+                                    <Image
+                                        fill={true}
+                                        alt={"image"}
+                                        src={`/images/${project.src}`} /></Link>
+
                             </div>
                         </div>
                     })
                 }
             </motion.div>
-            <motion.div style={{x: x2}} className={styles.slider}>
-                    {
-                        slider2.map( (project, index) => {
-                            return <div key={index} className={styles.project} style={{backgroundColor: project.color}} >
-                                <div key={index} className={styles.imageContainer}>
-                                    <Image 
-                                    fill={true}
-                                    alt={"image"}
-                                    src={`/images/${project.src}`}/>
-                                </div>
+            <motion.div style={{ x: x2 }} className={styles.slider}>
+                {
+                    slider2.map((project, index) => {
+                        return <div key={index} className={styles.project} style={{ backgroundColor: project.color }} >
+                            <div key={index} className={styles.imageContainer}>
+                                <Link href={`${project.href}`}>
+                                    <Image
+                                        fill={true}
+                                        alt={"image"}
+                                        src={`/images/${project.src}`} /></Link>
                             </div>
-                        })
-                    }
-                </motion.div>
+                        </div>
+                    })
+                }
+            </motion.div>
         </div>
 
     )
